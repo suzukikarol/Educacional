@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Garagem NERD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <h1 style="font-family: inherit"><font color="#0489B1">Cadastro de Produtos</font></h1>
+        <form action="ControleProduto" method="POST">
+            
+            Título: <input name="txtTitulo" type="text">
+            Edição: <input name="txtEdicao" type="text"><br/>
+            Editora: <input name="txtEditora" type="text">
+            Arte: <input name="txtArte" type="text"><br/><br/>
+            Páginas: <input name="Paginas" type="number" min="1" max="1000">
+            Texto: <input type="text" name="txtTexto"><br/><br/>
+            Personagens: <input type="text" name="txtPersonagens">
+            Idioma: <input type="text" name="txtIdioma"><br/>
+            Ano: <input type="text" name="txtAno">
+            Dimensões: <input type="text" name="txtDimensoes"><br/>
+            Preço: <input type="text" name="txtPreco">
+            Imagem: <input type="text" name="txtImagem"><br/><br/>
+            
+            <input type="submit" value="Cadastrar" name="acao">
+            <input type="submit" value="Listar" name="acao"><br>
+            <a href="principal.jsp">Página Principal</a>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Garagem NERD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        function formatar(mascara, documento){
+          var i = documento.value.length;
+          var saida = mascara.substring(0,1);
+          var texto = mascara.substring(i)
+
+          if (texto.substring(0,1) != saida){
+                    documento.value += texto.substring(0,1);
+          }
+
+        }
+        </script>
+    </head>
+    <body>
+        <h1 style="font-family: cursive, Comic Sans"><font color="#0489B1">Cadastro de Clientes</font></h1>
+        <form action="ControlePessoa" method="POST">
+            
+             Nome:<br>
+             <input type="text" name="txtNome"><br>
+            <!-- Last name:<br>
+            <input type="text" name="lastname"><br> -->
+            RG:<br> <input name="txtRG" type="text" maxlength="12" onkeypress="formatar('##.###.###-#', this)"><br/>
+            CPF: <br><input name="txtCPF" type="text" maxlength="14" onkeypress="formatar('###.###.###-##', this)"><br>
+            Data de Nasc:<br> <input name="txtDtNasc" type="date"><br/>
+            Telefone:<br> <input name="txtTelefone" type="text" maxlength="12" onkeypress="formatar('## ####-####',this)"><br/>
+            E-mail: <br><input type="email" name="txtEmail"><br/><br/>
+            
+            
+            <input type="submit" value="Cadastrar" name="acao">
+            <input type="submit" value="Listar" name="acao"><br>
+            <a href="principal.jsp">Página Principal</a>
+            
+        </form>
+    </body>
+</html>
