@@ -1,2 +1,2 @@
-# Educacional
-Todos( ou quase todos ) os projetos / documentos produzidos durante a vida acadêmica na Universidade de Mogi das Cruzes.
+# Educacional - - teste
+Nele contem o pacote de testes inicial do projeto Garagem Nerd.
