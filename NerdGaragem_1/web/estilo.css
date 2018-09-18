@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/03/2018, 11:03:24
+    Author     : 11151100178
+*/
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: #aaa;
+    font-size: 60px;
+}
+
+input[type=search] {
+    font-family: arial;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 500px;
+}
+
+#case-produtos, table {
+    display: inline-block;
+}
+
+.produto {
+    width: 200px;
+}
+
+.icone-botao {
+    color: #aaa;
+}
+.preco {
+    color: #aaa;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+a, a:hover {
+    color: #aaa;
+    text-decoration: none;
+}
